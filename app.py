@@ -47,7 +47,7 @@ NAMEN = [
 
   'id': 5,
   'name': 'Nikan',
-  'Beruf': 'Darmstadt',
+  'Beruf': 'Autohersteller',
   'Alter': '22',
   'Größe': '1.69'
 
@@ -58,7 +58,7 @@ NAMEN = [
 
 @app.route('/')
 def index():
-  return render_template('index.html', namen=NAMEN, Geschäftsführer=Darius)
+  return render_template('index.html', namen=NAMEN, Geschäftsführer='Darius')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -69,7 +69,7 @@ def login():
 @app.route('/pdf-datei', methods=['GET', 'POST'])
 def pdf():
 
-  return render_template("pdf.html")
+  return render_template("pdf.html",   )
 
 
 

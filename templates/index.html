@@ -7,10 +7,19 @@
             <title>Hello World</title>
         </head>
         <body>
-            <h1>Du wurdest weitergeleitet</h1>
+            <h1>Der Geschäftsführer lautet: {{Geschäftsführer}}</h1>
 
             <a href="{{ url_for('pdf') }}" class="link-button">Weiterleitung zum PDF</a><br>
             <a href="{{ url_for('login') }}" class="link-button">Weiterleitung zum Login</a>
+
+
+                <h2> Cousengs </h2>
+                <div>  
+                {% for name in namen %}}
+                {% include 'name.html' %}
+                {% endfor %}
+                </div>
+            
         </body>
     </html>
 </DOCTYPE>
