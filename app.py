@@ -3,7 +3,7 @@ import os
 from io import BytesIO
 
 app = Flask(__name__)
-"""
+
 NAMEN = [
 
 {
@@ -66,7 +66,7 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
   return render_template('login.html')
-"""
+
 
 @app.route('/pdf-datei', methods=['GET', 'POST'])
 def pdf():
