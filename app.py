@@ -3,7 +3,7 @@ import os
 from io import BytesIO
 
 app = Flask(__name__)
-
+"""
 NAMEN = [
 
 {
@@ -66,7 +66,7 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
   return render_template('login.html')
-
+"""
 
 @app.route('/pdf-datei', methods=['GET', 'POST'])
 def pdf():
@@ -118,4 +118,4 @@ def vorschau():
 
 
 if __name__ == '__main__':
-  app.run(host="0.0.0.0", debug=True)
+  app.run(host="0.0.0.0", port=5001, debug=True)
